@@ -31,3 +31,6 @@ def distance():
     }
     # respond to the API caller with a JSON representation of data. jsonify is important, as it sets response headers that indicate the respose is in JSON as well
     return jsonify(data), 200
+
+if __name__ == '__main__':
+    app.run(host="0.0.0.0")
